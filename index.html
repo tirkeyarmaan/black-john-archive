@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black John's Archive</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #080f19;
+      color: #eaf7ff;
+      font-family: Georgia, serif;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #243747;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo {
+      color: #78e4f2;
+      font-size: 21px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #b9d5e2;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      background: linear-gradient(120deg, #102b3d, #080f19 75%);
+    }
+
+    .hero small {
+      color: #78e4f2;
+      letter-spacing: 3px;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      max-width: 750px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #a9bdca;
+      max-width: 550px;
+      line-height: 1.8;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 14px 25px;
+      background: #78e4f2;
+      color: #07121c;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 45px 8%;
+    }
+
+    .section h2 {
+      color: #78e4f2;
+    }
+
+    .book {
+      max-width: 650px;
+      padding: 25px;
+      border: 1px solid #294356;
+      background: #101d2a;
+      border-radius: 10px;
+    }
+
+    .book p {
+      color: #a9bdca;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      color: #78909f;
+      border-top: 1px solid #243747;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">BLACK JOHN'S ARCHIVE</div>
+  <nav>
+    <a href="#books">Books</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <small>WELCOME TO THE ARCHIVE</small>
+  <h1>Stories worth getting lost in.</h1>
+  <p>
+    An independent archive of stories, strange ideas,
+    questionable characters and unexpected adventures.
+  </p>
+  <a href="#books" class="button">Explore the Library</a>
+</section>
+
+<section class="section" id="books">
+  <h2>Featured Book</h2>
+
+  <div class="book">
+    <small>BLACK JOHN'S ORIGINAL WORK</small>
+    <h3>This Was Supposed to be a Fighting Story</h3>
+    <p>
+      A story about friendship, absurdity, fighting
+      and everything that refuses to make sense.
+    </p>
+    <a href="reader.html?chapter=1" class="button">
+      Start Reading
+    </a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>About the Archive</h2>
+  <p>
+    A small corner of the internet dedicated to
+    original stories and creative experiments.
+  </p>
+</section>
+
+<footer>
+  © 2026 Black John's Archive
+  <p>Made for readers, not algorithms.</p>
+</footer>
+
+</body>
+</html>
