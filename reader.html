@@ -300,7 +300,7 @@ async function loadChapter() {
     document.getElementById("chapterTitle").textContent =
       "Chapter " + chapter;
 
-    document.getElementById("content").htmlContent = text;
+    document.getElementById("content").innerHTML = text;
 
     setTimeout(() => {
       window.scrollTo(0, Number(
