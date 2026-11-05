@@ -291,7 +291,7 @@ async function loadChapter() {
     "reader.html?chapter=" + (chapter + 1);
 
   try {
-    const response = await fetch("chapters/chapter" + chapter + ".txt");
+    const response = await fetch("chapters/chapter" + chapter + ".html");
 
     if (!response.ok) throw new Error("Chapter not found");
 
@@ -300,7 +300,7 @@ async function loadChapter() {
     document.getElementById("chapterTitle").textContent =
       "Chapter " + chapter;
 
-    document.getElementById("content").textContent = text;
+    document.getElementById("content").htmlContent = text;
 
     setTimeout(() => {
       window.scrollTo(0, Number(
