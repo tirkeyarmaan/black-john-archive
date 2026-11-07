@@ -4,72 +4,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>The Things I Never Said Between Sundays</title>
+<title>The Things I Never Said Between Sundays | Black John's Archive</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 20px;
-  background:
-    radial-gradient(circle at top, #243c59, #101827 65%);
-  color: #e3eaf3;
+  background: radial-gradient(circle at top, #435b78, #101827 75%);
+  color: #e5eaf1;
   font-family: Georgia, serif;
 }
 
 .container {
-  max-width: 850px;
-  margin: 35px auto;
+  max-width: 900px;
+  margin: 30px auto;
 }
 
-.header {
+.top {
   text-align: center;
-  padding: 45px 20px;
-  border: 3px ridge #7088a5;
-  background: linear-gradient(145deg, #304c6c, #14243a);
-  box-shadow: 0 0 25px #0008;
-}
-
-.header small {
-  font-family: monospace;
+  font: 11px monospace;
   letter-spacing: 3px;
   color: #a9c9e8;
+  margin-bottom: 20px;
 }
 
-h1 {
-  font-size: clamp(30px, 6vw, 48px);
+.cover {
+  min-height: 390px;
+  padding: 45px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 5px double #9aafc5;
+  background:
+    linear-gradient(#10182766, #101827bb),
+    radial-gradient(ellipse at 50% 20%, #91abc5, transparent 60%),
+    linear-gradient(145deg, #263f5b, #101827);
+  box-shadow: 0 10px 35px #0009, inset 0 0 35px #0008;
+}
+
+.cover small {
+  font: 11px monospace;
+  letter-spacing: 3px;
+  color: #c1d7eb;
+}
+
+.cover h1 {
+  max-width: 700px;
+  font-size: clamp(34px, 6vw, 57px);
   font-weight: normal;
-  line-height: 1.2;
-  margin: 22px 0;
+  line-height: 1.15;
+  margin: 35px 0 20px;
+  text-shadow: 3px 4px 10px #000;
 }
 
-.subtitle {
-  color: #c0d0e0;
+.cover p {
   font-style: italic;
+  color: #d0dce9;
 }
 
 .panel {
   margin-top: 20px;
   padding: 25px;
-  background: linear-gradient(145deg, #263950, #172639);
-  border: 3px ridge #536b87;
+  background: linear-gradient(145deg, #293e56, #172639);
+  border: 3px ridge #647d99;
   box-shadow: inset 0 0 15px #0005;
 }
 
 .panel h2 {
   text-align: center;
   font-weight: normal;
-  color: #b9d9f5;
+  color: #c1d9f0;
+  letter-spacing: 2px;
 }
 
 .intro {
   line-height: 1.9;
-  color: #d0dbe8;
   text-align: center;
+  color: #d0dbe8;
 }
 
 .chapter {
@@ -80,12 +95,10 @@ h1 {
   color: #e3eaf3;
   background: linear-gradient(120deg, #344e6b, #1b2d43);
   border: 2px outset #7189a5;
-  transition: 0.2s;
 }
 
 .chapter:hover {
   background: linear-gradient(120deg, #496c91, #263f5d);
-  transform: translateY(-2px);
 }
 
 .chapter small {
@@ -100,16 +113,12 @@ h1 {
   font-weight: normal;
 }
 
-.coming {
-  opacity: 0.55;
-  cursor: default;
-}
-
 .back {
-  display: inline-block;
-  margin-top: 20px;
+  display: block;
+  margin-top: 25px;
+  text-align: center;
   color: #a9c9e8;
-  font-family: monospace;
+  font: 12px monospace;
   text-decoration: none;
 }
 
@@ -117,44 +126,32 @@ footer {
   text-align: center;
   padding: 25px 10px;
   color: #8298b1;
-  font-family: monospace;
-  font-size: 11px;
-  line-height: 2;
+  font: 11px/2 monospace;
 }
 
 @media(max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
-  .container {
-    margin: 15px auto;
-  }
-
-  .panel {
-    padding: 18px;
-  }
+  body { padding: 10px; }
+  .panel { padding: 18px; }
 }
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
-  <header class="header">
-    <small>BLACK JOHN'S ARCHIVE // ORIGINAL NOVEL</small>
+  <div class="top">
+    BLACK JOHN'S ARCHIVE // BOOK COLLECTION
+  </div>
 
+  <header class="cover">
+    <small>AN ORIGINAL NOVEL · BOOK NO. 002</small>
     <h1>The Things I Never Said Between Sundays</h1>
-
-    <p class="subtitle">
-      Some stories are easier to tell on paper.
-    </p>
+    <p>Some stories are easier to tell on paper.</p>
+    <small>WRITTEN BY BLACK JOHN · EST. 2026</small>
   </header>
 
   <section class="panel">
     <h2>✦ ABOUT THE STORY ✦</h2>
-
     <p class="intro">
       A coming-of-age story about ordinary Sundays,
       unexpected conversations, old letters, friendship
@@ -177,16 +174,14 @@ footer {
       <strong>The Unexpected Question</strong>
     </a>
 
-<a class="chapter" href="sundays-reader.html?chapter=3">
-  <small>CHAPTER 03</small>
-  <strong>Christmas Season</strong>
-</a>
-   
-
+    <a class="chapter" href="sundays-reader.html?chapter=3">
+      <small>CHAPTER 03</small>
+      <strong>Christmas Season</strong>
+    </a>
   </section>
 
   <a class="back" href="index.html">
-    ← BACK TO BLACK JOHN'S ARCHIVE
+    ← RETURN TO BLACK JOHN'S ARCHIVE
   </a>
 
   <footer>
@@ -196,7 +191,5 @@ footer {
   </footer>
 
 </div>
-
 </body>
 </html>
-<!-- Fresh deployment check -->
