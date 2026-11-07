@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The House Doesn't Sleep | Black John's Archive</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#28352f 0%,transparent 55%),linear-gradient(145deg,#10141c,#171d20 55%,#0b1119);color:#e5e9ef;font-family:Georgia,serif;min-height:100vh}
+header{min-height:66px;padding:0 6%;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(180deg,#34413d,#151e20);border-bottom:1px solid #71877b;font-family:Arial,sans-serif}
+.logo{color:#c5e6d1;font-weight:bold;letter-spacing:2px;font-size:12px}
+header a{color:#d2e8dc;text-decoration:none;font-size:13px}
+.toolbar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;padding:13px;background:#121b27ee;border-bottom:1px solid #46586a;font-family:Arial,sans-serif}
+button,select{padding:9px 13px;background:linear-gradient(180deg,#40564d,#1b2a25);color:#e6f8ed;border:1px solid #718d7b;border-radius:3px;cursor:pointer;font-size:12px}
+.progress{height:3px;background:#283746;position:sticky;top:57px;z-index:6}
+#progressBar{height:100%;width:0;background:linear-gradient(90deg,#78a88c,#c5e6d1);transition:width .1s}
+.book{max-width:820px;margin:55px auto;padding:55px 65px;background:linear-gradient(145deg,#1c2926ee,#131b20ee);border:1px solid #536f62;box-shadow:inset 0 1px #ffffff18,0 15px 45px #0008}
+.chapter-label{color:#b9dfc6;text-transform:uppercase;letter-spacing:4px;font:11px Arial,sans-serif;margin-bottom:18px}
+h1{color:#f0f3f7;font-size:39px;font-weight:normal;line-height:1.25;margin:0 0 12px}
+.subtitle{color:#a9b9b0;font:12px Arial,sans-serif;letter-spacing:2px;margin:0 0 35px;padding-bottom:25px;border-bottom:1px solid #526b5e}
+#content{font-size:19px;line-height:1.95;color:#d8e0e9;overflow-wrap:anywhere}
+#content p{margin:0 0 1.15em}
+#content h2{font-size:23px;font-weight:normal;letter-spacing:2px;color:#d7e9dd;margin:2.2em 0 1em}
+#content .time{font:12px Arial,sans-serif;letter-spacing:2px;color:#a7c5b1}
+#content .end{text-align:center;letter-spacing:3px;color:#c5e6d1;margin-top:3em}
+.navigation{display:flex;justify-content:space-between;gap:15px;margin-top:60px;padding-top:25px;border-top:1px solid #526273;font-family:Arial,sans-serif}
+.navigation a{color:#c5e6d1;text-decoration:none;font-size:13px;padding:10px 15px;background:linear-gradient(180deg,#34493e,#1a2923);border:1px solid #627d6c}
+body.paper{background:#d7d2c9;color:#302b25}
+body.paper header,body.paper .toolbar{background:linear-gradient(180deg,#eee8dc,#d5cbb9);border-color:#a99b85}
+body.paper header a,body.paper .logo{color:#554a3d}
+body.paper button,body.paper select{background:#e8dfd0;color:#302b25;border-color:#a99a81}
+body.paper .book{background:#f5f0e6;border-color:#b8aa93}
+body.paper h1,body.paper #content{color:#302b25}
+body.paper .subtitle,body.paper .navigation{border-color:#c9bca9}
+body.paper .chapter-label,body.paper .navigation a{color:#746044}
+body.paper .navigation a{background:#e8dfd0;border-color:#b5a58e}
+body.sepia{background:#c9b58e;color:#493923}
+body.sepia header,body.sepia .toolbar{background:linear-gradient(180deg,#e6d3ad,#cbb58d);border-color:#aa9169}
+body.sepia header a,body.sepia .logo,body.sepia h1,body.sepia #content{color:#493923}
+body.sepia .book{background:#eee1c6;border-color:#b9a27b}
+body.sepia .chapter-label,body.sepia .navigation a{color:#795b31}
+body.sepia .navigation a{background:#dfcba5;border-color:#b9a27b}
+@media(max-width:700px){header{padding:0 16px}.book{margin:25px 10px;padding:34px 23px}h1{font-size:30px}#content{font-size:18px;line-height:1.85}.toolbar{gap:7px;padding:10px 6px}button,select{padding:8px 9px;font-size:11px}}
+</style>
+</head>
+<body>
+<header><div class="logo">BLACK JOHN'S ARCHIVE</div><a href="index.html">← BACK TO LIBRARY</a></header>
+<div class="toolbar">
+<button onclick="changeFont(-1)">A−</button><button onclick="changeFont(1)">A+</button>
+<select id="theme" onchange="changeTheme(this.value)"><option value="dark">Dark</option><option value="paper">Paper</option><option value="sepia">Sepia</option></select>
+<button onclick="toggleFocus()">Focus mode</button>
+</div>
+<div class="progress"><div id="progressBar"></div></div>
+<main class="book">
+<div class="chapter-label">THE HOUSE DOESN'T SLEEP · CHAPTER ONE</div>
+<h1>The Last Road</h1>
+<p class="subtitle">BELLWETHER COUNTY · NOVEMBER 1996</p>
+<article id="content">
+<p class="time">8:17 PM</p>
+<p>The radio had been playing the same song for almost twenty minutes.</p>
+<p>Not because the driver particularly liked it. He had simply forgotten to change the station.</p>
+<p>Outside, November rain crawled down the windshield in thin, crooked lines. The headlights illuminated a narrow stretch of asphalt, surrounded by pine trees that seemed to grow directly out of the darkness.</p>
+<p>The road was empty.</p>
+<p>It had been empty for the last forty miles.</p>
+<p>A cigarette burned between the driver's fingers.</p>
+<p>He glanced at the dashboard clock.</p>
+<p>8:17.</p>
+<p>He looked back at the road.</p>
+<p>8:17.</p>
+<p>"Wonderful."</p>
+<p>He tapped the clock twice. It continued displaying the same time.</p>
+<p>The radio crackled.</p>
+<p>For a moment, the music slowed down, as though somebody were turning an invisible dial.</p>
+<p>Then a man's voice interrupted it.</p>
+<p>"...remain indoors until further notice."</p>
+<p>The driver frowned.</p>
+<p>"What?"</p>
+<p>Static.</p>
+<p>"...Bellwether residents are advised..."</p>
+<p>The transmission disappeared.</p>
+<p>He reached for the radio controls.</p>
+<p>A burst of music returned.</p>
+<p>He turned it off.</p>
+<p>The silence was immediate.</p>
+<p>A few seconds passed.</p>
+<p>Then something struck the underside of the car.</p>
+<em>Thump.</em>
+<p>He gripped the steering wheel.</p>
+<p>Another sound.</p>
+<em>Thump.</em>
+<p>He slowed down and glanced into the rear-view mirror.</p>
+<p>Nothing.</p>
+<p>"Bloody roads."</p>
+<p>He continued driving.</p>
+<h2>1. The Cabin</h2>
+<p>The Hollow Cabin wasn't particularly impressive.</p>
+<p>It was an old wooden building standing several metres away from the road, surrounded by trees and an overgrown patch of grass. A rusted mailbox leaned beside the entrance. Someone had left a broken garden chair underneath the porch.</p>
+<p>There were no lights outside.</p>
+<p>The driver parked his car.</p>
+<p>He sat for a moment, watching the cabin.</p>
+<p>A yellow light glowed behind one of the windows.</p>
+<p>He checked the address written on a folded piece of paper.</p>
+<p>Then he looked at the building again.</p>
+<p>"Well, that's something."</p>
+<p>He stepped outside.</p>
+<p>The rain had become lighter, although the air was cold enough to make him regret leaving his jacket in the passenger seat.</p>
+<p>He approached the porch and knocked.</p>
+<p>Nothing.</p>
+<p>He knocked again.</p>
+<p>From somewhere inside came the sound of a chair scraping against the floor.</p>
+<p>The door opened.</p>
+<p>A woman stood on the other side.</p>
+<p>She appeared to be in her late twenties. Her dark hair was tied loosely behind her head, and she wore a grey sweater with sleeves rolled up to her elbows.</p>
+<p>She looked at him.</p>
+<p>"You're late."</p>
+<p>The man checked his watch.</p>
+<p>"Am I?"</p>
+<p>She stared at him for another second.</p>
+<p>Then she stepped aside.</p>
+<p>"Come in."</p>
+<p>He entered.</p>
+<p>There were already four other people inside.</p>
+<p>A broad-shouldered man sat near the fireplace, cleaning his glasses with the corner of his shirt. A young woman occupied the sofa, reading a magazine. Another man stood beside the kitchen counter, attempting to open a bottle with a house key.</p>
+<p>The fifth person was nowhere to be seen.</p>
+<p>"Well," said the man with the glasses, "another one."</p>
+<p>"Another what?" asked the newcomer.</p>
+<p>"Person."</p>
+<p>The woman with the magazine turned a page.</p>
+<p>"He's been doing that all evening."</p>
+<p>"Doing what?"</p>
+<p>"Being annoying."</p>
+<p>The man with the glasses put his spectacles back on.</p>
+<p>"Frankly, I think I'm being very welcoming."</p>
+<p>The newcomer placed his suitcase near the wall.</p>
+<p>"Is this some kind of meeting?"</p>
+<p>Nobody answered immediately.</p>
+<p>The woman in the grey sweater closed the door.</p>
+<p>"No. We're all just waiting for the weather to clear."</p>
+<p>"Waiting for what?"</p>
+<p>"Morning."</p>
+<p>He nodded slowly.</p>
+<p>"Right."</p>
+<p>A brief silence followed.</p>
+<p>The man beside the counter finally opened his bottle.</p>
+<p>"Anybody want one?"</p>
+<p>"No," said the woman on the sofa.</p>
+<p>"Didn't ask you."</p>
+<p>She lowered her magazine.</p>
+<p>"Then stop looking at me."</p>
+<p>The newcomer sighed.</p>
+<p>He was beginning to suspect that this would be a very long evening.</p>
+<h2>2. Six People</h2>
+<p>By nine o'clock, everyone had introduced themselves, although not particularly enthusiastically.</p>
+<p>The woman in the grey sweater was Helen.</p>
+<p>The man with the glasses was Arthur.</p>
+<p>The woman reading the magazine was Claire.</p>
+<p>The man beside the kitchen counter was Mason.</p>
+<p>The newcomer with the suitcase was Daniel.</p>
+<p>And the sixth person, who had apparently been upstairs when everyone arrived, was Elliot.</p>
+<p>Elliot eventually appeared carrying a blanket and a half-empty box of cereal.</p>
+<p>"Is there milk?"</p>
+<p>Nobody responded.</p>
+<p>He looked around.</p>
+<p>"Fantastic."</p>
+<p>He went into the kitchen.</p>
+<p>Daniel sat beside the fireplace.</p>
+<p>"So, how did everyone end up here?"</p>
+<p>"Car trouble," Mason answered.</p>
+<p>"Same," said Arthur.</p>
+<p>Claire raised her hand slightly.</p>
+<p>"Wrong turn."</p>
+<p>Helen shrugged.</p>
+<p>"Needed somewhere to stay."</p>
+<p>Daniel looked towards Elliot.</p>
+<p>"And you?"</p>
+<p>Elliot was eating cereal directly from the box.</p>
+<p>"Long story."</p>
+<p>"Fair enough."</p>
+<p>"Actually, no. Not really."</p>
+<p>He returned to eating.</p>
+<p>The conversation eventually shifted towards the weather, the road conditions and whether the cabin had enough blankets.</p>
+<p>It was ordinary.</p>
+<p>Comfortably ordinary.</p>
+<p>Outside, the rain continued.</p>
+<h2>3. The Upstairs Room</h2>
+<p>At approximately 9:36 PM, Claire went looking for a bathroom.</p>
+<p>She found one at the end of the upstairs corridor.</p>
+<p>The corridor was narrow, with faded wallpaper and a single ceiling bulb that occasionally flickered.</p>
+<p>She returned several minutes later.</p>
+<p>"There's a room upstairs."</p>
+<p>Helen looked up from the table.</p>
+<p>"Yes?"</p>
+<p>"Why is it locked?"</p>
+<p>"Which room?"</p>
+<p>"At the end of the hallway."</p>
+<p>Helen thought for a moment.</p>
+<p>"Probably storage."</p>
+<p>"There's somebody knocking inside."</p>
+<p>The room became quiet.</p>
+<p>Mason stopped pouring his drink.</p>
+<p>Arthur looked at her.</p>
+<p>"Knocking?"</p>
+<p>Claire nodded.</p>
+<p>"Three times."</p>
+<p>Elliot leaned back in his chair.</p>
+<p>"Maybe the storage has developed a personality."</p>
+<p>Nobody laughed.</p>
+<p>Helen stood up.</p>
+<p>"I'll check."</p>
+<p>They followed her upstairs.</p>
+<p>The corridor was empty.</p>
+<p>The locked door stood at the end, painted a dull shade of brown. Its brass handle was tarnished, and a small number had been nailed above it.</p>
+<p>The number was 7.</p>
+<p>Helen tried the handle.</p>
+<p>Locked.</p>
+<p>She knocked.</p>
+<p>Nothing.</p>
+<p>She waited.</p>
+<p>Then knocked again.</p>
+<p>Nothing.</p>
+<p>"See?" she said.</p>
+<p>Claire crossed her arms.</p>
+<p>"I heard it."</p>
+<p>"Probably the pipes."</p>
+<p>Helen started walking back downstairs.</p>
+<p>Arthur remained behind for a moment.</p>
+<p>He looked at the door.</p>
+<p>There was something strange about the number.</p>
+<p>It appeared freshly painted.</p>
+<p>He reached towards it.</p>
+<p>The wood around the nail was old and dark.</p>
+<p>The number itself was white.</p>
+<p>Arthur returned downstairs without mentioning it.</p>
+<h2>4. 10:12 PM</h2>
+<p class="time">10:12 PM</p>
+<p>The electricity went out.</p>
+<p>The entire cabin fell into darkness.</p>
+<p>Somebody swore.</p>
+<p>A chair scraped against the floor.</p>
+<p>"Brilliant," Elliot muttered.</p>
+<p>Mason found a box of matches in the kitchen drawer. Helen lit three candles and placed them on the table.</p>
+<p>Outside, the rain had stopped.</p>
+<p>That was the first thing Daniel noticed.</p>
+<p>The second was the absence of wind.</p>
+<p>The forest beyond the windows was completely still.</p>
+<p>Not quiet.</p>
+<p>Still.</p>
+<p>Like a photograph.</p>
+<p>"Does anyone have a flashlight?" Arthur asked.</p>
+<p>"I've got one in the car," Daniel replied.</p>
+<p>"I'll come with you."</p>
+<p>They stepped onto the porch.</p>
+<p>The air smelled of wet wood and soil.</p>
+<p>Daniel unlocked his car and retrieved a flashlight from the glove compartment.</p>
+<p>Arthur stood beside him, looking towards the trees.</p>
+<p>"Strange place."</p>
+<p>"You're telling me."</p>
+<p>Arthur pointed towards the road.</p>
+<p>"Did you see that?"</p>
+<p>Daniel turned.</p>
+<p>"What?"</p>
+<p>"Nothing."</p>
+<p>They stood there for another moment.</p>
+<p>Then Arthur looked towards the cabin.</p>
+<p>"Let's go inside."</p>
+<h2>5. Something in the Trees</h2>
+<p>Inside, the others had begun arguing about the electricity.</p>
+<p>Mason insisted it was probably a local outage.</p>
+<p>Elliot suggested that perhaps the cabin was haunted.</p>
+<p>Claire told him to shut up.</p>
+<p>Helen was searching through a cupboard for spare candles.</p>
+<p>Then Daniel noticed something.</p>
+<p>A window.</p>
+<p>It was slightly open.</p>
+<p>He approached it and looked outside.</p>
+<p>The trees were black against the cloudy sky.</p>
+<p>He closed the window.</p>
+<p>For a moment, his reflection stared back at him.</p>
+<p>Behind it, somewhere beyond the glass, something moved.</p>
+<p>Daniel turned.</p>
+<p>Nothing.</p>
+<p>He looked outside again.</p>
+<p>Nothing.</p>
+<p>"Everything alright?" Helen asked.</p>
+<p>"Yeah."</p>
+<p>He stepped away from the window.</p>
+<p>The conversation resumed.</p>
+<p>The candles burned lower.</p>
+<p>And the clock above the fireplace continued displaying 10:12.</p>
+<h2>6. The Last Road</h2>
+<p class="time">10:47 PM</p>
+<p>Somewhere beyond the cabin, deep inside the forest, something was moving.</p>
+<p>The road was empty.</p>
+<p>The trees stood motionless.</p>
+<p>There was no rain.</p>
+<p>No wind.</p>
+<p>No distant traffic.</p>
+<p>Only darkness.</p>
+<p>And then, between two pine trees, a figure appeared.</p>
+<p>It stood upright.</p>
+<p>Its movements were slow and deliberate.</p>
+<p>It took one step.</p>
+<p>Then another.</p>
+<p>A human silhouette.</p>
+<p>The figure moved closer.</p>
+<p>Its shoulders shifted.</p>
+<p>Its head tilted slightly to one side.</p>
+<p>Another step.</p>
+<p>The perspective lowered.</p>
+<p>The movement became uneven.</p>
+<p>Something brushed against the wet leaves.</p>
+<p>A shape crossed the path.</p>
+<p>Four limbs.</p>
+<p>A narrow back.</p>
+<p>Something resembling an animal.</p>
+<p>But the silhouette didn't quite belong to any animal.</p>
+<p>It stopped.</p>
+<p>For several seconds, it remained completely motionless.</p>
+<p>Then its head turned towards the cabin.</p>
+<p>The cabin was visible now.</p>
+<p>One yellow light glowed through the curtains.</p>
+<p>The figure moved again.</p>
+<p>Closer.</p>
+<p>Closer.</p>
+<p>The perspective began to distort.</p>
+<p>The trees appeared unusually tall. The ground seemed to rise and fall beneath it. The movement no longer resembled walking, crawling or running.</p>
+<p>It was simply getting closer.</p>
+<p>Inside the cabin, someone laughed.</p>
+<p>A chair scraped.</p>
+<p>A voice said something about the electricity.</p>
+<p>The figure reached the edge of the clearing.</p>
+<p>The porch was empty.</p>
+<p>The front door was closed.</p>
+<p>Through the window, six people could be seen sitting around a table.</p>
+<p>The perspective moved towards the porch.</p>
+<p>A step.</p>
+<p>Another.</p>
+<p>Then—</p>
+<p>The porch light switched off.</p>
+<p>Inside, the laughter stopped.</p>
+<p>"Did somebody touch the switch?" Mason asked.</p>
+<p>Nobody answered.</p>
+<p>A sound came from outside.</p>
+<p>Three slow knocks.</p>
+<p><em>Knock.</em></p>
+<p><em>Knock.</em></p>
+<p><em>Knock.</em></p>
+<p>Everyone looked towards the front door.</p>
+<p>Helen stood up.</p>
+<p>"Hello?"</p>
+<p>Silence.</p>
+<p>She approached the door.</p>
+<p>"Who's there?"</p>
+<p>Nothing.</p>
+<p>Then, from somewhere directly above her—</p>
+<p>A fourth knock.</p>
+<p><em>Knock.</em></p>
+<p>Helen looked towards the ceiling.</p>
+<p>The others followed her gaze.</p>
+<p>And the camera—</p>
+<p>The perspective—</p>
+<p>Whatever it was—</p>
+<p>Remained outside.</p>
+<p>Looking at the cabin.</p>
+<p>Waiting.</p>
+<p class="end">END OF CHAPTER ONE.</p>
+</article>
+<div class="navigation"><a href="index.html">← Back to Archive</a><a href="#" aria-disabled="true" onclick="return false" style="opacity:.45;cursor:default">Next chapter coming soon →</a></div>
+</main>
+<script>
+let fontSize=19;
+function changeFont(n){fontSize=Math.max(14,Math.min(30,fontSize+n));document.getElementById("content").style.fontSize=fontSize+"px"}
+function changeTheme(t){document.body.classList.remove("paper","sepia");if(t!=="dark")document.body.classList.add(t);localStorage.setItem("archiveHorrorTheme",t)}
+function toggleFocus(){document.querySelector("header").style.display=document.querySelector("header").style.display==="none"?"flex":"none"}
+function updateProgress(){const s=document.documentElement.scrollHeight-innerHeight;document.getElementById("progressBar").style.width=(s>0?scrollY/s*100:0)+"%"}
+document.addEventListener("scroll",updateProgress);
+const saved=localStorage.getItem("archiveHorrorTheme")||"dark";document.getElementById("theme").value=saved;changeTheme(saved);updateProgress();
+</script>
+</body>
+</html>
