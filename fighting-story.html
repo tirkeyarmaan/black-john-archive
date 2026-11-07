@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This Was Supposed to be a Fighting Story | Black John's Archive</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background:
+    radial-gradient(circle at top, #454b58, #11131a 75%);
+  color: #e8e8e8;
+  font-family: Georgia, serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 35px auto;
+}
+
+.top {
+  text-align: center;
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #9ebbd3;
+  margin-bottom: 20px;
+}
+
+.cover {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) 1.2fr;
+  gap: 35px;
+  align-items: center;
+  padding: 30px;
+  background: linear-gradient(145deg, #303541, #171b24);
+  border: 4px ridge #8993a3;
+  box-shadow: 0 10px 35px #0009;
+}
+
+.art {
+  min-height: 430px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: #f2eee5;
+  border: 5px double #a6a6a6;
+  background:
+    radial-gradient(circle at 50% 35%, #626b78, transparent 35%),
+    repeating-linear-gradient(135deg, #242832 0 8px, #191c24 8px 16px);
+  box-shadow: inset 0 0 30px #000;
+}
+
+.art small {
+  font-family: monospace;
+  letter-spacing: 3px;
+  color: #c6d9e9;
+}
+
+.art h2 {
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #000;
+}
+
+.art .symbol {
+  font-size: 65px;
+  color: #b5c8d9;
+}
+
+.details small {
+  color: #9ebbd3;
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+
+.details h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.15;
+  font-weight: normal;
+  color: #f0f0f0;
+}
+
+.details p {
+  line-height: 1.9;
+  color: #c4c9d2;
+}
+
+.quote {
+  margin-top: 25px;
+  padding: 15px;
+  border-left: 3px solid #8eabc4;
+  background: #ffffff0a;
+  font-style: italic;
+  color: #c9d9e7;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 13px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  background: linear-gradient(#7099bb, #294663);
+  border: 3px outset #a8c9e1;
+}
+
+.button:hover {
+  background: linear-gradient(#9bc8e7, #416d91);
+}
+
+.back {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  color: #a9c6df;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+  color: #77879a;
+  font-family: monospace;
+  font-size: 11px;
+  line-height: 2;
+}
+
+@media(max-width: 700px) {
+  .cover {
+    grid-template-columns: 1fr;
+    padding: 17px;
+  }
+
+  .art {
+    min-height: 380px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="top">
+    BLACK JOHN'S ARCHIVE // BOOK COLLECTION
+  </div>
+
+  <main class="cover">
+
+    <div class="art">
+      <small>AN ORIGINAL STORY</small>
+      <div>
+        <div class="symbol">✦</div>
+        <h2>This Was Supposed to be a Fighting Story</h2>
+      </div>
+      <small>BLACK JOHN // EST. 2026</small>
+    </div>
+
+    <div class="details">
+      <small>BOOK NO. 001 // ABSURDIST FICTION</small>
+
+      <h1>This Was Supposed to be a Fighting Story</h1>
+
+      <p>
+        What begins as a story about fighting slowly turns
+        into something else entirely.
+      </p>
+
+      <p>
+        Friendship, absurdity, philosophy, questionable
+        decisions and a collection of people who probably
+        need better hobbies.
+      </p>
+
+      <div class="quote">
+        "A little chaos never hurt anybody's narrative."
+      </div>
+
+      <a class="button" href="reader.html?chapter=1">
+        START READING →
+      </a>
+    </div>
+
+  </main>
+
+  <a class="back" href="index.html">
+    ← RETURN TO THE ARCHIVE
+  </a>
+
+  <footer>
+    BLACK JOHN'S ARCHIVE<br>
+    MADE WITH HTML, CURIOSITY & QUESTIONABLE DECISIONS
+  </footer>
+
+</div>
+
+</body>
+</html>
